@@ -29,3 +29,23 @@ def recipes(request):
           
     context = {'recipes': queryset}
     return render(request, 'recipe.html', context)
+
+#Update the recipes data 
+@login_required(login_url='/login/')
+def update_recipe(request, id):
+    queryset = Recipe.objects.get(id=id)
+ 
+    if request.method == 'POST':
+        data = request.POST   
+        day = data.get('day')
+        name = data.get('name')
+        description = data.get('description')
+         
+        queryset.day = day
+        queryset.name = name
+        queryset.description = description
+        queryset.save()
+        return redirect('/')
+ 
+    context = {'recipe': queryset}
+    return render(request, 'update_recipe.html', context)
