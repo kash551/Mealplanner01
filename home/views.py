@@ -56,3 +56,24 @@ def delete_recipe(request, id):
     queryset = Recipe.objects.get(id=id)
     queryset.delete()
     return redirect('/')   
+
+#login page for user
+def login_page(request):
+    if request.method == "POST":
+        try:
+            username = request.POST.get('username')
+            password = request.POST.get('password')
+            user_obj = User.objects.filter(username=username)
+            if not user_obj.exists():
+                messages.error(request, "Username not found")
+                return redirect('/login/')
+            user_obj = authenticate(username=username, password=password)
+            if user_obj:
+                login(request, user_obj)
+                return redirect('recipes')
+            messages.error(request, "Wrong Password")
+            return redirect('/login/')
+        except Exception as e:
+            messages.error(request, "Something went wrong")
+            return redirect('/register/')
+    return render(request, "login.html")    
