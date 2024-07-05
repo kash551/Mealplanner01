@@ -96,4 +96,34 @@ def register_page(request):
         except Exception as e:
             messages.error(request, "Something went wrong")
             return redirect('/register')
-    return render(request, "register.html")    
+    return render(request, "register.html")   
+
+#logout function
+def custom_logout(request):
+    logout(request)
+    return redirect('login')      
+
+#Generate the Bill
+@login_required(login_url='/login/')
+def pdf(request):
+    if request.method == 'POST':
+        data = request.POST    
+        day = data.get('day')
+        name = data.get('name')
+        description = data.get('description')
+         
+        Recipe.objects.create(
+            day = day,
+            name=name,
+            description=description,
+           
+        )
+        return redirect('pdf')
+    queryset = Recipe.objects.all()
+ 
+    if request.GET.get('search'):
+        queryset = queryset.filter(
+            day__icontains=request.GET.get('search'))  
+ 
+    context = {'recipes': queryset}
+    return render(request, 'pdf.html', context)    
