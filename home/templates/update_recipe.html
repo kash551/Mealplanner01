@@ -29,6 +29,16 @@
         <textarea  name="description"  type="text" rows="5" cols="30" value="{{recipe.description}}"></textarea>
     <br> 
     <br>
+
+     <!-- Display created_at and updated_at fields -->
+     <div class="form-group">
+      <label for="createdAt">Created At</label>
+      <input type="text" id="createdAt" value="{{ created_at }}" class="form-control" readonly>
+  </div>
+  <div class="form-group">
+      <label for="updatedAt">Updated At</label>
+      <input type="text" id="updatedAt" value="{{ updated_at }}" class="form-control" readonly>
+  </div>
  
     <button type="submit" >Update Data</button>
   </form>

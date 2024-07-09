@@ -48,7 +48,11 @@ def update_recipe(request, id):
 		queryset.save()
 		return redirect('/')
 
-	context = {'recipe': queryset}
+	context = {
+		'recipe': queryset,
+		'created_at': queryset.created_at,
+		'updated_at': queryset.updated_at,
+	}
 	return render(request, 'update_recipe.html', context)
 
 #delete the recipes data
