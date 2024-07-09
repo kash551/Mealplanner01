@@ -1,4 +1,5 @@
 #import all libraries
+#import all libraries
 from django.shortcuts import render, redirect
 from .models import Recipe
 from django.http import HttpResponse, JsonResponse, HttpResponseRedirect
@@ -7,6 +8,7 @@ from django.contrib.auth import login, authenticate
 from django.contrib.auth.decorators import login_required 
 from django.contrib.auth.models import User
 from django.contrib.auth import logout
+from django.contrib import messages
 
 #create recipes page
 @login_required(login_url='/login/')
@@ -21,6 +23,7 @@ def recipes(request):
 			name=name,
 			description=description,	 
 		)
+		messages.info(request, "Creation Successful")
 		return redirect('/')
 
 	queryset = Recipe.objects.all()
@@ -46,18 +49,16 @@ def update_recipe(request, id):
 		queryset.name = name
 		queryset.description = description
 		queryset.save()
+		
 		return redirect('/')
 
-	context = {
-		'recipe': queryset,
-		'created_at': queryset.created_at,
-		'updated_at': queryset.updated_at,
-	}
+	context = {'recipe': queryset}
 	return render(request, 'update_recipe.html', context)
 
 #delete the recipes data
 @login_required(login_url='/login/')
 def delete_recipe(request, id):
+	messages.info(request, "deleted Successfully")
 	queryset = Recipe.objects.get(id=id)
 	queryset.delete()
 	return redirect('/')
@@ -75,6 +76,7 @@ def login_page(request):
 			user_obj = authenticate(username=username, password=password)
 			if user_obj:
 				login(request, user_obj)
+				messages.info(request, "Login Successful")
 				return redirect('recipes')
 			messages.error(request, "Wrong Password")
 			return redirect('/login/')
@@ -106,6 +108,7 @@ def register_page(request):
 #logout function
 def custom_logout(request):
 	logout(request)
+	messages.info(request, "Logout Successful")
 	return redirect('login') 
 
 #Generate the Bill

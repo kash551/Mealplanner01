@@ -1,3 +1,5 @@
+{% extends 'base.html' %}
+{% block start %}
 <!doctype html>
 <html lang="en">
 
@@ -14,7 +16,7 @@
 
 	
 <br><br>
-	
+
 	<div class="container bg-white col-md-2 card shadow p-3 " id="log">
 		<div class="login-form">
 			{% if messages %}
@@ -50,3 +52,5 @@
 </body>
 
 </html>
+
+{% endblock %}
