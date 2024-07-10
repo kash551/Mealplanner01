@@ -111,7 +111,7 @@ def custom_logout(request):
 	messages.info(request, "Logout Successful")
 	return redirect('login') 
 
-#Generate the Bill
+#Generate the PDF
 @login_required(login_url='/login/')
 def pdf(request):
 	if request.method == 'POST':
