@@ -29,10 +29,12 @@ Emma is a passionate reader who loves immersing herself in different worlds thro
 * As a user I want to be able to add my own meals.
 * As a user I want to be able to create an account so that I can view the meals I have added.
 *  As a busy individual I want to be able adjust meal plans easily for unexpected changes in my schedule.
-* As a user I want to be able to edit and delete meals on my account.
+* As a user I want to be able to edit meals on my account.
+* As a user i want to be bale to delete meals.
 * As a user I want to be able to logout of my account.
 * As a user I want to be able to download my meal plan as a PDF.
-* As an admin I want to be able to plan meals across multiple days, weeks, or months.
+* As a user i want to be able to view when i created a certain meal when i go to edit it and when the last time i edited it was.
+* As an admin i want to be able to set the date and time for each meal specific to me and the user.
 
 ## Wireframe & Initial Design:
 ### Home Page
