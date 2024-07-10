@@ -22,7 +22,7 @@ https://thebookbooth1-559d9131718c.herokuapp.com/
 
 # Persona and User Stories:
 
-Emma is a passionate reader who loves immersing herself in different worlds through books. She spends most of her free time indulging in her favorite hobby and is always on the lookout for new and exciting reads. She has a phone booth library in her city and would like to view the books that are available to borrow prior to visiting. 
+ Rachel is a extremley busy individual who works long hours and has limited time for meal planning and preparation. She finds it difficult to keep track of what she has already ate throughout the week. Rachel is looking for a solution to her difficulties and would like to try out a meal planner. 
 
 ## User Stories:
 * As a busy individual I want to be able to plan my meals ahead of time.
