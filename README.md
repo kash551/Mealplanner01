@@ -8,7 +8,7 @@
 
 The live application can be viewed here : 
 
-https://thebookbooth1-559d9131718c.herokuapp.com/
+https://meal-plann-92f1402c6fab.herokuapp.com/
 
 
 # Purpose and Target Audience:
@@ -37,16 +37,16 @@ https://thebookbooth1-559d9131718c.herokuapp.com/
 * As an admin i want to be able to set the date and time for each meal specific to me and the user.
 
 ## Wireframe & Initial Design:
-### Home Page
+### Home Page/Login
 ![1](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/a17458a2-fd0b-45cb-af44-387ed524fef6)
 
-### (Logged in) Browse books
+### Register
 ![1](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/a4c56a06-3692-467d-813a-ba3797d3087c)
 
-### Add a Book
+### (Logged in) Add recipes/meals
 ![Add a book wireframe](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/c0379553-0906-4d77-aca6-beb8fc6834d9)
 
-### Book Detail Page
+### Gnerate the PDF page
 
 ![Book Details Wireframe](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/467fa65e-eb66-4b21-94af-f9090b6a54ab)
 
@@ -58,38 +58,31 @@ This project was created using Agile principles via a projectboard on Github. Th
 
 # Design Choices:
 
-## Colour scheme:
+## Colour scheme: white and on the generate PDF page #22e010 to make it stand out to the user this is your final product.
 
-#fafafa - Header
+  Nav Bar light bg
 
-Dark Green - Buttons
+Red - Button for Gnerating the PDF so it stands out
 
-#809977 - Footer
 
-The colours were selected with the intention of complementing the hero image and the idea was to ensure the image was appreciated.
+The colours were selected with the intention of being clear for the user as I wanted the site to be about functionality and not have any distractions, simplifying it for the user.
 
 ## Typography:
- The following fonts were chosen for a clean and modern look that is both readable and minimal.
-
-Varta
-
-Goudy Book Letter 1911
-
+ The following fonts were standard and not changed as once again I wanted the site to be minimalistic as well as being clear for all to read and utilise.
 
 ## Priority Features:
 
-### Home Page:
+### Home Page/Login
 
 #### Navbar & Hero Image:
 ![home](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/4f033ade-4485-40c2-ac2d-5fc5641b5cb7)
 
-The landing page provides an introduction to the website with a call to action button encouraging new users to sign up. Signing up and logging in allows them access to view the available books and to add a book to the collection.
-The navigation bar is valuable for users as it provides quick and easy access to important sections of the website. The navigation bar includes links to Home, Books, Add a Book, Register/Logout and Sign In. Displaying a hero image using graphics are both aesthetic and a nod to the repurposed phone booths that have been transformed into local libraries around the world.
+The landing page provides the user with the login function as well as the create an account link directly underneath allowing the user to register if they don't already have an account. On the Home page their is also a navbar allowing the user to navigate to each page as well as the title of the site so the user knows what site they are on.
 
 
 #### Registration:
 
-Registration allows users to view the available books and the relevant book details at The Book Booth library. It allows them to add a book as well as edit and delete their addition to ensure the book collection available is updated regularly. 
+Registration allows users to create an account and once an account has been created they will then be prompted to login.
 
 ![signup](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/0b6b2b83-d426-4e63-805b-09a6dcdde550)
 
@@ -100,42 +93,31 @@ Registration allows users to view the available books and the relevant book deta
 ![sign-in](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/6a1d9a16-2211-4403-88a1-3ec1b506cef4)
 
 
-#### Books:
+####  Add Recipes:
 
 ![books](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/54c96d8e-6bc3-403f-a8ad-1c4188b60a6e)
 
+Once logged in the user will then be faced with the add recipes page this is where the user can fill out the boxes provided with the information prompted and add the data by clicking the add data button, once this has been clicked directly below the user will be able to see the information they input in the table.
 
-#### Add a Book:
+#### Generate Plan:
 
 ![add a book](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/8e15c1d9-193f-4032-b147-0969c3b45bab)
 
 
-The form allows users to easily add a book to the library which will then be visible on the  books page for the users to browse. Users are also able to edit and delete a book they themselves have added giving them full control over their own contributions.
+When the user is happy with th information they have input they can then click the Generate Plan button this will then take them to another page which will showcase them their information again.
 
 
-#### Book Details:
+#### Generate PDF:
 
 ![book detail](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/e88f0274-670b-4a76-8ef8-7c44a5f440a7)
 
-Users are able to find more information about the book they are interested in. The book details include the title, author and a brief summary of the book along with an book cover image. This provides users with sufficient information about the book.
-
-#### Footer:
-
-![footer](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/fde543e6-0ee2-4c17-b8a8-436d4e824f4d)
-
-Links in the footer redirect to respective social media pages. 
-It allows users to stay connected with the The Book Booth on social media platforms, keeping them informed about any changes that may occur over time.
-
+Users are able to click the red Generate PDF button once they are happy which will then save the document to their device as a PDF document to which they can then share or print.
 
 # Future Features:
 
-* Implement a review system so readers can share their thoughts about books that they have completed. This will give others a better idea of whether the book is a good fit for them. 
-* Display if a book is available with a status (Available, Not Available).
-*  Allow users to reserve a book beforehand.
-* A search engine where users can search for books by title, author and genre.
-* Provide locations of nearest libraries.
-* Provide a way for the users to engage and form a secure community.
-* Include an about page to inform others of how The Book Booth Library works and how to use it.
+* Implement a review system so users can share their thoughts about how they feel about the site. 
+* A search engine where users can search for previous meals they have added.
+* Include an about page to inform others of how The Meal Planner site works and how to use it.
 
 
 Database Design:
@@ -149,30 +131,15 @@ Entity Relationship Diagrams (ERD) help the developer to make connections betwee
 ## Data Models:
 
 
-| Book   |            |   |
+| Recipe   |            |   |
 |----------|:-------------:|------:|
-| Title |  CharField |  |
-| Author |  CharField   |   FK |
-| ISBN | CharField |     |
-| User |  CharField | FK |
-| Genre |  CharField   |   FK |
-| Language | CharField |  FK   |
-| Summary |  TextField |  |
+| User |  Interger |  | FK
+| Day |  CharField   |    |
+| Name | CharField |     |
+| Description |  CharField |  |
+| Created_at |  DateTimeField   |    |
+| Updated_at | DateTimeField |     |
 
-
-
-| Genre   |            |   |
-|----------|:-------------:|------:|
-| Category |  CharField | FK |
-
-
-| Language   |            |   |
-|----------|:-------------:|------:|
-| Language |  CharField | FK  |
-
-| Author  |            |   |
-|----------|:-------------:|------:|
-| Name |  CharField | FK  |
 
 ## User Flow Chart:
 ![The Book Booth Flowchart](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/7727f007-8e2e-45fc-b955-57e2d50d1e98)
@@ -333,7 +300,7 @@ Add a book
 | Feature | Expected Outcome | Grade | Screenshots |
 | ------- | ---------------- | ----- | --------- |
 | Modal | A message will appear informing the user of a successful action | Pass | ![modal sign out ](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/9e8658e8-f751-4cdf-be3d-ca19ad6c47b2)
-| User logged in | Text displays the user logged in with their username | Pass | ![modal sign in name](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/cc4a71db-9962-49c1-b4b6-563000687ad7)
+| User logged in | Text displays the user logged in | Pass | ![modal sign in name](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/cc4a71db-9962-49c1-b4b6-563000687ad7)
 | View books | Users can see available books which have been added | Pass | ![testing books](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/01cc3a5b-db46-4742-a8e1-cf715d78c89b)
 | Add a book | Add a book to the book collection that will be available to borrow | Pass | ![addbook](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/82133f44-d43a-4f40-863a-f4e8970057aa)
 | Admin has access to crud functionality of all additions | Admin can edit or delete any book addition | Pass | ![admin testing](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/72df0b87-6d4f-4659-9d4f-5e986f88e16c)
@@ -344,8 +311,6 @@ Add a book
 | Log out | Users get logged out after clicking "Log out" | Pass | ![testing sign out](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/d7d377aa-fc2d-4025-a73e-22d2d81c622a)
 | Grid display | A CSS grid will display the books in a clear, responsive format | Pass | N/A
 | Functional buttons | Edit, delete, create buttons will be functional throughout the site | Pass | ![edit delete buttons](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/67cfb78d-7d5b-4072-8aa8-812b9c444b67)
-| Footer | A footer displays social information | Pass | ![footer](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/0879fada-18a4-4363-8257-0af0061cf79f)
-| Social links work | The social links will navigate to a new page when they're clicked. They will open in a new tab | Pass | ![footer](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/0879fada-18a4-4363-8257-0af0061cf79f)
 
 
 # Tools and Technologies Used:
@@ -357,16 +322,15 @@ The technologies implemented in this application included HTML5, CSS, Bootstrap,
 * GitHub Pages used for hosting the deployed front-end site.
 * Gitpod used as a cloud-based IDE for development.
 * Bootstrap used as the front-end CSS framework for modern responsiveness and pre-built components.
-* ElephantSQL used as the Postgres database.
-* Heroku used for hosting the deployed back-end site.
-* Cloudinary used for online static file storage.
-* Canva Utilized for collaborative design and prototyping(wireframes).
+* CI used as the Postgres database.
+* Heroku used for hosting the deployed site.
+* Balsamiq Utilized for collaborative design and prototyping(wireframes).
 
 * Google and Stack Overflow utilized for general research or solving a bug, information gathering, and various online tools.
 
 
 # Languages Used:
-* HTML5
+* HTML
 * CSS
 * Python
 
@@ -386,10 +350,6 @@ All the bugs that occured during the creation of this application have been reso
 * Stack Overflow was used to solve any smaller bugs and further clarification on errors I was receiving in the terminal.
 
 * I used this site to generate a persona and created user stories: https://founderpal.ai/user-persona-generator
-
-* A special thanks to all the other indivudals in our cohort for their continuous support throughout the course.
-
-* The added book covers and details were taken from the Waterstones Website.
 
 * Font Awesome was used for icons and the fonts used were derived from Google Fonts.
 
