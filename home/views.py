@@ -1,6 +1,6 @@
 #import all libraries
 #import all libraries
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from .models import Recipe
 from django.http import HttpResponse, JsonResponse, HttpResponseRedirect
 from django.contrib import messages
@@ -58,10 +58,14 @@ def update_recipe(request, id):
 #delete the recipes data
 @login_required(login_url='/login/')
 def delete_recipe(request, id):
-	messages.info(request, "deleted Successfully")
-	queryset = Recipe.objects.get(id=id)
-	queryset.delete()
-	return redirect('/')
+    recipe = get_object_or_404(Recipe, id=id)
+    
+    if request.method == "POST":
+        recipe.delete()
+        messages.info(request, "Deleted Successfully")
+        return redirect('/')
+    
+    return render(request, 'confirm_delete.html', {'recipe': recipe})
 
 #login page for user
 def login_page(request):
