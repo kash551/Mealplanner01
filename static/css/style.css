@@ -1,0 +1,8 @@
+.ok{
+	color: rgb(236, 11, 11);
+	text-decoration: none;
+}
+.ok:hover{
+	color: white;
+	text-decoration: none;
+}
