@@ -1,18 +1,9 @@
+<!DOCTYPE html>
+<title>Meal</title>
 {% extends "base.html" %}
 {% block start %}
 
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-<style>
-.ok{
-	color: rgb(236, 11, 11);
-	text-decoration: none;
-}
-.ok:hover{
-	color: white;
-	text-decoration: none;
-}
-
-</style>
 
 <div class="container mt-3 col-6">
 <br><br>
@@ -34,14 +25,14 @@
 		<label for="exampleInputPassword1">Description </label>
 		<!-- <input name="description" type="text" rows="10" cols="50" required> -->
 
-		<textarea name="description" type="text" rows="5" cols="30"></textarea>
+		<textarea name="description" rows="5" cols="30"></textarea>
 		</div>
 		<button type="submit" class="">Add Data</button>
 	</form>
 	<hr>
 	<div class="class mt-5">
-		<form action="">
-		<button > <a href="{% url 'pdf' %}">Generate Plan </a></button>
+		<form>
+		<button > <a href="{%url 'pdf' %}">Generate Plan </a></button>
 		</form>
 
 		<table class="table mt-6">
