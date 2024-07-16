@@ -51,6 +51,7 @@ def update_recipe(request, id):
         queryset.name = name
         queryset.description = description
         queryset.save()
+        messages.info(request, "Updated Successfully")
 
         return redirect('/')
 
