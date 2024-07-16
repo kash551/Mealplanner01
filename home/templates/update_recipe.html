@@ -1,48 +1,41 @@
-
 {% extends "base.html" %}
 {% block start %}
- 
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
- 
- 
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 <div class="container mt-5">
- 
-  <form class="col-sm-12 col-md-6 mx-auto card p-3 shadow-lg" method="post" enctype="multipart/form-data">
-    {% csrf_token %}
- 
-    
-    <div class="form-group">
-      <label for="exampleInputEmail1">Day-Time </label>
-      <input type="text" name="day" value="{{recipe.day}}"  required>
-    </div>
-    <div class="form-group">
-      <label for="exampleInputEmail1">Recipe </label>
-      <input name="name" type="text" value="{{recipe.description}}"
-        required>
- 
-    </div>
-    <div class="form-group">
-      <label for="exampleInputPassword1">Description </label>
-        <textarea  name="description"  type="text" rows="5" cols="30" value="{{recipe.description}}"></textarea>
-    <br> 
-    <br>
+    <form class="col-sm-12 col-md-6 mx-auto card p-3 shadow-lg" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
 
-     <!-- Display created_at and updated_at fields -->
-     <div class="form-group">
-      <label for="createdAt">Created At</label>
-      <input type="text" id="createdAt" value="{{ recipe.created_at }}" class="form-control" readonly>
-  </div>
-  <div class="form-group">
-      <label for="updatedAt">Updated At</label>
-      <input type="text" id="updatedAt" value="{{ recipe.updated_at }}" class="form-control" readonly>
-  </div>
- 
-    <button type="submit" >Update Data</button>
-  </form>
- 
- 
+        <div class="form-group">
+            <label for="dayInput">Day-Time</label>
+            <input type="text" id="dayInput" name="day" value="{{recipe.day}}" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="recipeInput">Recipe</label>
+            <input id="recipeInput" name="name" type="text" value="{{recipe.name}}" class="form-control" required>
+        </div>
+        <div class="form-group">
+            <label for="descriptionInput">Description</label>
+            <textarea id="descriptionInput" name="description" rows="5" cols="30" class="form-control">{{recipe.description}}</textarea>
+        </div>
+
+        <!-- Display created_at and updated_at fields -->
+        <div class="form-group">
+            <label for="createdAt">Created At</label>
+            <input type="text" id="createdAt" value="{{ recipe.created_at }}" class="form-control" readonly>
+        </div>
+        <div class="form-group">
+            <label for="updatedAt">Updated At</label>
+            <input type="text" id="updatedAt" value="{{ recipe.updated_at }}" class="form-control" readonly>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Update Data</button>
+    </form>
 </div>
- 
-{% endblock %}
 
- 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+{% endblock %}
