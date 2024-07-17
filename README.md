@@ -38,22 +38,21 @@ https://meal-plann-92f1402c6fab.herokuapp.com/
 
 ## Wireframe & Initial Design:
 ### Home Page/Login
-![1](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/a17458a2-fd0b-45cb-af44-387ed524fef6)
+ <img src="readmeimages/wireframelogin.png">
 
 ### Register
-![1](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/a4c56a06-3692-467d-813a-ba3797d3087c)
+<img src="readmeimages/wireframeregister.png">
 
 ### (Logged in) Add recipes/meals
-![Add a book wireframe](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/c0379553-0906-4d77-aca6-beb8fc6834d9)
+<img src="readmeimages/wireframerecipe.png">
 
 ### Gnerate the PDF page
-
-![Book Details Wireframe](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/467fa65e-eb66-4b21-94af-f9090b6a54ab)
+<img src="readmeimages/wireframepdf.png">
 
 ## Agile:
 This project was created using Agile principles via a projectboard on Github. This is the first time I have implemented Agile as an individual developer. However, creating user stories and identifying accepterance criteria acted as a roadmap to target the various features and functionalities of the application. It helped me stay on track and reduced distractions.
 
-![project board](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/98b7d24d-7234-4155-af15-df72403659f9)
+<img src="readmeimages/kanbanboard.png">
 
 
 # Design Choices:
@@ -75,7 +74,7 @@ The colours were selected with the intention of being clear for the user as I wa
 ### Home Page/Login
 
 #### Navbar & Hero Image:
-![home](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/4f033ade-4485-40c2-ac2d-5fc5641b5cb7)
+<img src="readmeimages/loginhomepage.png">
 
 The landing page provides the user with the login function as well as the create an account link directly underneath allowing the user to register if they don't already have an account. On the Home page their is also a navbar allowing the user to navigate to each page as well as the title of the site so the user knows what site they are on.
 
@@ -84,24 +83,18 @@ The landing page provides the user with the login function as well as the create
 
 Registration allows users to create an account and once an account has been created they will then be prompted to login.
 
-![signup](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/0b6b2b83-d426-4e63-805b-09a6dcdde550)
-
-
-
-#### Sign In:
-
-![sign-in](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/6a1d9a16-2211-4403-88a1-3ec1b506cef4)
+<img src="readmeimages/registerpage.png">
 
 
 ####  Add Recipes:
 
-![books](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/54c96d8e-6bc3-403f-a8ad-1c4188b60a6e)
+<img src="readmeimages/addrecipepage.png">
 
 Once logged in the user will then be faced with the add recipes page this is where the user can fill out the boxes provided with the information prompted and add the data by clicking the add data button, once this has been clicked directly below the user will be able to see the information they input in the table.
 
 #### Generate Plan:
 
-![add a book](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/8e15c1d9-193f-4032-b147-0969c3b45bab)
+<img src="
 
 
 When the user is happy with th information they have input they can then click the Generate Plan button this will then take them to another page which will showcase them their information again.
@@ -109,7 +102,7 @@ When the user is happy with th information they have input they can then click t
 
 #### Generate PDF:
 
-![book detail](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/e88f0274-670b-4a76-8ef8-7c44a5f440a7)
+<img src="readmeimages/pdfpage.png">
 
 Users are able to click the red Generate PDF button once they are happy which will then save the document to their device as a PDF document to which they can then share or print.
 
@@ -122,7 +115,7 @@ Users are able to click the red Generate PDF button once they are happy which wi
 
 Database Design:
 
-![ERD](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/6db92c85-0b4c-485c-b60d-709df3fb963e)
+<img src="readmeimages/databaseschema.png">
 
 
 Entity Relationship Diagrams (ERD) help the developer to make connections between databases and information. Creating an ERD helped me understand how the tables relate to one another. I used LucidChart to create the diagram and the arrow represent how the data fields relate to one another.
@@ -142,20 +135,19 @@ Entity Relationship Diagrams (ERD) help the developer to make connections betwee
 
 
 ## User Flow Chart:
-![The Book Booth Flowchart](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/7727f007-8e2e-45fc-b955-57e2d50d1e98)
+<img src="readmeimages/userflowchart.png">
 
 The Flowchart served as an efficient way to make important decisions when creating the app. It helped me narrow down which decisions were important for the users and admin as well as establishing the appropriate authentication. It also helped me decide which features were the most important i.e adding a book and viewing a list of books that are available to borrow at The Book Booth Library.
 
 # Validation
 ## HTML
 
-| Page | W3C URL | Screenshot | Notes |
+| Page | W3C | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2F) | ![home page validate](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/2ba0ff6e-6159-47e9-ad4c-2fe954589ca8) | Pass: button is a descendant of a tag |
-| Books | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Fbooks%2Fbooks%2F) | ![Validate Books page](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/b7c018c4-a68a-43ee-97c5-778658bbf705) | Pass: No Errors |
-| Add a Book | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Fbooks%2Fadd_book%2F) | ![validate adda book page](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/95eb01b9-22fc-43c4-93de-0ebcd1263467) | Pass: No Errors |
-| Sign In| [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Flogin%2F) | ![validate sign in](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/872629ce-e50d-4870-845b-ed699f9178dc) | Pass: No Errors |
-| Register| [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | ![validate sign up](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/c5e042af-b3d5-4718-bc50-ef319ba1a1c3) | unclosed elements main and div |
+| Home/Login | [W3C]| ![home page validate]<img src="readmeimages/loginhtmlvalidation.png"> | Pass: |
+| Update Recipe | [W3C] | <img src="readmeimages/updaterecipepagehtmlvalidation.png">| Pass: No Errors |
+| Add a Recipe/Meal |  | <img src="readmeimages/recipepagehtmlvalidation.png"> | Pass: No Errors |
+| Register| [W3C] | <img src="readmeimages/registervalidation.png"> | |
 
  ## CSS
 
@@ -163,7 +155,7 @@ The Flowchart served as an efficient way to make important decisions when creati
  
 | File | Jigsaw URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| style.css | [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=enhttps://jigsaw.w3.org/css-validator/validator) | ![validate css](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/200fc160-1092-4cd0-bba4-2ab1a721eb72) | Pass: No Errors |
+| style.css | [Jigsaw] | <img src="readmeimages/cssvalidation.png">| Pass: No Errors |
 
 ## Python
 
@@ -171,15 +163,13 @@ I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com
 
 | File | CI URL | Screenshot | Notes |
 | --- | --- | --- | --- |
-| forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/run.py) | ![screenshot]![forms py](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/f299346f-bb44-43a2-a8a5-868373d753e3)
+| settings.py | [PEP8 CI] | <img src="readmeimages/settings.pyvalidation.png">
  | Pass: No Errors |
-| settings.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/boutique-ado/settings.py) | ![screenshot]![settings py](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/7951202c-2d55-4adb-90d6-8fef0707c82c)
+| views.py | [PEP8 CI]| <img src="readmeimages/views.pyvalidation.png">
  | Pass: No Errors |
-| Book views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/blog/views.py) | ![screenshot]![views py](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/4f545d53-b304-4600-b9fb-d4feb93b6c93)
+| urls.py | [PEP8 CI] | <img src="readmeimages/urls.pyvalidation.png">
  | Pass: No Errors |
-| Book urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/checkout/urls.py) | ![screenshot]![urls py](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/e3f52187-1f65-4171-b1ba-e9096d1b5fc0)
- | Pass: No Errors |
-|  models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/profiles/models.py) | ![screenshot]![models py](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/f3438ec1-f275-44b6-847d-48a93c0466ed)
+|  models.py | [PEP8 CI] | <img src="readmeimages/models.pyvalidation.png">
  | Pass: No Errors |
 
 # Responsiveness:
@@ -193,7 +183,7 @@ Laptops:
 * Lenovo Thinkpad 14" screen
 
  Mobile Devices:
-* Google Pixel 4a
+* Galaxy Note 20
 
  * Browser Compatibility:
  
@@ -204,9 +194,9 @@ Laptops:
 ![chrome](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/545ba4e5-c7bc-4fd8-8660-1444dcb3be2a)
 
 
-* Microsoft Edge
+* Firefox
 
-![microsoft edge](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/1570a9cd-6591-45db-840b-ecbe7f7aeb5b)
+![microsoft edge]<img src-"readmeimages/firefox.png">
 
 
 I can confirm that the site is responsive and looks as expected good on different screen sizes.
@@ -214,37 +204,30 @@ I can confirm that the site is responsive and looks as expected good on differen
 
 Mobile devices:
 
-![Screenshot_20231207-234024](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/0f0b0d7d-a72f-43a4-8a57-bc1cf02a1367)
+<img src="readmeimages/loginpagemobile.png">
 
-![Screenshot_20231207-234033](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/4c3cc202-b8f6-4f9d-b1bd-cf57c911db65)
+<img src="readmeimages/addrecipepagemobile.png">
 
-![Screenshot_20231207-234013](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/39989e07-4e8d-4faf-8b57-e11686792b38)
-
-
-![0](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/211095bf-ffac-42ca-b1c8-2a45d8444038)
-
-![Screenshot_20231207-234117 (1)](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/e52d022b-d3fb-4f6c-8fcb-092386ce566b)
-
-![Screenshot_20231208-000014](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/0cd224f9-b46e-4db9-9260-999cc63fff90)
+<img src="readmeimages/updaterecipepagemobile.png">
 
 
+<img src="readmeimages/generatepdfpagemobile.png">
 
-
+<img src="readmeimages/registerpagemobile.png">
 
 Tablet Devices:
 
 
-![homepage](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/5e6eb5c7-4aba-434c-8ed8-8bfd56632f8a)
+![homepage/Login] <img src="readmeimages/loginpageipad.png">
 
-![signup tablet](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/c5f5a237-83ee-4ef3-b9b0-444f648ca225)
+![Register] <img src="readmeimages/registerpageipad.png">
 
-![sign in tablet](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/9ac1d08b-d4b8-4aa5-a65b-e46040f3b60b)
 
-![books tablet](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/a9c42d34-a49a-48ed-97ba-660c02de3543)
+![Add Recipe] <img src="readmeimages/recipepageipad.png">
 
-![tabletadd](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/b516d61d-6e21-460a-b7f4-5b18abf41d00)
+![Update Recipe] <img src="readmeimages/updaterecipepageipad.png">
 
-![bookdetails tablet](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/17a0f099-ae15-4b8a-887b-254beac2dbb0)
+![Generate PDF] <img src="readmeimages/generatepdfpageipad.png">
 
 
 
@@ -261,35 +244,47 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 Home
 
-![homeaudit](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/5fa9bac2-d4bf-47fe-bb4a-50b3b0c4938b)
+![home/Login] <img src="readmeimages/loginpagelighthousedesktop.png">
 
 Books 
 
-![auditbooks](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/d6401b01-e4d5-4ed1-b8e9-ff6d5eeb4bd9)
+![Update Recipe] <img src="readmeimages/updaterecipepagelighthousedesktop.png">
 
 Add a book 
-![audit add book](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/e429ee62-ecbe-4b2f-8521-28da15773a46)
+!add a recipe] <img src="readmeimages/recipepagelighthousedesktop.png">
+
+Generate PDF Page
+[PDF Page] <img src="readmeimages/generatepdfpagelighthousedesktop.png">
+
+Register Page
+[Register Page] <img src="readmeimages/registerpagelighthousedesktop.png">
 
 On a mobile device:
 
-Home 
-![audit home mobile ](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/348889e3-8c4e-41d4-b1c6-2c974780e23b)
+Home/Login 
+![audit home mobile ] <img src="readmeimages/homelighthouse.png">
 
-Books
-![auditbooks](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/fad662af-54da-45d0-b381-c0d70955e4e4)
+Update Recipe
+![Update Recipe Page] <img src="
 
-Add a book 
-![audit addbookmobile](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/634965ca-1b9d-4aa1-bd17-bda89f9fbafe)
+Add a Recipe 
+![Add recipe/meals] <img src="readmeimages/recipelighthouse.png">
+
+Generate PDF Page
+[PDF Page] <img src="readmeimages/generatepdfpagelighthouse.png">
+
+Register Page
+[Register Page] <img src="readmeimages/registerpagelighthouse.png">
 
 
 ## Links
 
 | Link | Expected Outcome | Grade |
 | ------- | ---------------- | ----- |
-| Logo | Navigates to the home page when clicked | Fail |
-| Home | Navigates to the home page when clicked | Pass |
-| Books | Navigates to a book list  page when clicked | Pass |
-| Add a Book | Navigates to a form to add a book when clicked | Pass |
+| Logo | Navigates to the home page when clicked | Pass |
+| Home/Login | Navigates to the home page when clicked | Pass |
+| Update | Navigates to a update page when clicked | Pass |
+| Recipes/Meals | Navigates to a form to add a book when clicked | Pass |
 | Register | Navigates to a registration form when clicked | Pass |
 | Log in | Navigates to a screen where users can log in when clicked | Pass |
 | Logout | Navigates to a page confirming for the user to log out | Pass |
@@ -299,17 +294,16 @@ Add a book
 
 | Feature | Expected Outcome | Grade | Screenshots |
 | ------- | ---------------- | ----- | --------- |
-| Modal | A message will appear informing the user of a successful action | Pass | ![modal sign out ](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/9e8658e8-f751-4cdf-be3d-ca19ad6c47b2)
-| User logged in | Text displays the user logged in | Pass | ![modal sign in name](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/cc4a71db-9962-49c1-b4b6-563000687ad7)
-| View books | Users can see available books which have been added | Pass | ![testing books](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/01cc3a5b-db46-4742-a8e1-cf715d78c89b)
-| Add a book | Add a book to the book collection that will be available to borrow | Pass | ![addbook](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/82133f44-d43a-4f40-863a-f4e8970057aa)
+| Modal | A message will appear informing the user of a successful action | Pass | ![Logged in ]<img src="readmeimages/addrecipepage.png">
+| User logged in | Text displays the user login successful | Pass | ![modal Logged in]<img src="readmeimages/addrecipepage.png">
+| View Recipes/Meals they added | Users can see recipes/meals which they have added | Pass | ![Recipes/Meals] <img src="readmeimages/addrecipepage.png">
+| Add a book | Add a book to the book collection that will be available to borrow | Pass | ![add a recipe/meal]<img src="readmeimages/addrecipepage.png">
 | Admin has access to crud functionality of all additions | Admin can edit or delete any book addition | Pass | ![admin testing](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/72df0b87-6d4f-4659-9d4f-5e986f88e16c)
-| Edit a book | A user can edit the details on the book that they have addded. It will update their addition on the books page | Pass | ![edit book ](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/79f6de7e-fd14-4c34-a474-483b7cd5285f)
-| Delete a book | A user who added a book OR an admin can delete a book. It will then be deleted from the DB | Pass | ![delete book](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/88275723-e875-404a-b96f-58bac0a4907a)
-| Registration | New users can access a registration form from the "Register" link | Pass | ![testing sign up](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/e9e6c4e1-c90a-4854-a11c-014a8fc80043)
-| Log in | Users can log in using a form after clicking "Log in" | Pass | ![sign in testing ](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/3fafee34-e6d6-4162-8989-faa78e1bf355)
+| Edit a recipe/meal | A user can edit the details on the recipe/meal that they have addded. It will update their addition on the recipe page | Pass | ![edit recipe/meal ](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/79f6de7e-fd14-4c34-a474-483b7cd5285f)
+| Delete a recipe/meal | A user who added a recipe/meal OR an admin can delete. It will then be deleted from the DB | Pass | ![delete book](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/88275723-e875-404a-b96f-58bac0a4907a)
+| Registration | New users can access a registration form from the "Register" link | Pass | ![testing sign up] <img src="readmeimages/registerpage.png">
+| Log in | Users can log in using a form after clicking "Log in" | Pass | ![sign in testing ]<img src="readmeimages/loginhomepage.png">
 | Log out | Users get logged out after clicking "Log out" | Pass | ![testing sign out](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/d7d377aa-fc2d-4025-a73e-22d2d81c622a)
-| Grid display | A CSS grid will display the books in a clear, responsive format | Pass | N/A
 | Functional buttons | Edit, delete, create buttons will be functional throughout the site | Pass | ![edit delete buttons](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/67cfb78d-7d5b-4072-8aa8-812b9c444b67)
 
 
